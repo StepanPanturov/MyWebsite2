@@ -2,26 +2,28 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  background: linear-gradient(to right, #f8f9fa, #e9ecef); 
   color: #333;
 }
-
 
 main {
   max-width: 1000px;
   margin: 0 auto;
   padding: 40px 20px;
+  background-color: white; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px;
+  margin-top: 30px;
 }
-
 
 h1 {
   text-align: center;
   font-size: 3rem;
-  color: #2c3e50;
+  color: #2c3e50; 
   font-family: 'Trebuchet MS', sans-serif;
   margin-bottom: 40px;
+  text-transform: uppercase; 
 }
-
 
 #country-list {
   display: flex;
@@ -31,30 +33,47 @@ h1 {
   margin-bottom: 30px;
 }
 
-
 .country-btn {
-  padding: 10px 20px;
+  padding: 12px 25px;
   border: none;
   background-color: #3498db;
   color: white;
   cursor: pointer;
   border-radius: 8px;
   font-size: 1rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .country-btn:hover {
-  background-color: #2980b9;
+  background-color: #2980b9; 
+  transform: translateY(-2px);
 }
 
-
-#country-details {
+#country-info {
+  display: none; 
   background-color: white;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
+  max-width: 700px;
+  margin: 50px auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.5s ease;
+}
+
+#country-info img {
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#country-info p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+#country-info h2 {
+  font-size: 2rem;
+  color: #34495e;
+  margin-bottom: 20px;
 }
